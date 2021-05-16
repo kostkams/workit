@@ -32,13 +32,6 @@
     "remark-preset-lint-recommended": "^4.0.0",
     "typescript": "^4.0.5"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lerna run lint-fix && remark .",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "lerna exec npm run test"
-    }
-  },
   "remarkConfig": {
     "plugins": [
       "remark-preset-lint-recommended"

@@ -3,8 +3,8 @@
  * Licensed under the MIT license.
  * See LICENSE file in the project root for full license information.
  */
-import { SERVICE_IDENTIFIER as CORE_IDENTIFIER, TAG } from 'workit-camunda';
-import { IoC, Worker } from 'workit-core';
+import { SERVICE_IDENTIFIER as CORE_IDENTIFIER, TAG } from '@mkostka/workit-camunda';
+import { IoC, Worker } from '@mkostka/workit-core';
 import { HelloWorldTask } from '../tasks/helloWorldTask';
 
 enum LOCAL_IDENTIFIER {

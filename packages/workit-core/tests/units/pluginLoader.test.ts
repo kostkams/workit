@@ -5,7 +5,7 @@
  */
 import * as path from 'path';
 import { PluginLoader, searchPathForTest } from '../../src/plugin/pluginLoader';
-import { IPlugins, HookState } from 'workit-types';
+import { IPlugins, HookState }from '@mkostka/workit-types';
 import { IoC } from '../../src/config/container';
 
 const INSTALLED_PLUGINS_PATH = path.join(__dirname, 'node_modules');

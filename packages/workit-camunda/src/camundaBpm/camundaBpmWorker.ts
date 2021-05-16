@@ -5,8 +5,8 @@
  */
 
 import { inject, injectable, named } from 'inversify';
-import { Worker } from 'workit-core';
-import { ICamundaService, IClient, IProcessHandler } from 'workit-types';
+import { Worker } from '@mkostka/workit-core';
+import { ICamundaService, IClient, IProcessHandler }from '@mkostka/workit-types';
 import { Client } from '../camunda-n-mq/client';
 import { SERVICE_IDENTIFIER } from '../config/constants/identifiers';
 import { TAG } from '../config/constants/tag';

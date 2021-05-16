@@ -6,7 +6,7 @@
 
 import { Client as CamundaExternalClient } from 'camunda-external-task-client-js';
 import nock = require('nock');
-import { ICamundaClient } from 'workit-types';
+import { ICamundaClient }from '@mkostka/workit-types';
 import { CamundaBpmClient } from '../../src/camundaBpmClient';
 
 let manager: CamundaBpmClient;

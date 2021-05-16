@@ -5,8 +5,8 @@
  */
 
 import * as nock from 'nock';
-import { FailureStrategySimple, SCProcessHandler, SuccessStrategySimple, Worker } from 'workit-core';
-import { ICamundaConfig } from 'workit-types';
+import { FailureStrategySimple, SCProcessHandler, SuccessStrategySimple, Worker } from '@mkostka/workit-core';
+import { ICamundaConfig }from '@mkostka/workit-types';
 import { ZeebeClient } from 'workit-zeebe-client';
 import { Client } from '../../src/camunda-n-mq/client';
 

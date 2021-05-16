@@ -5,8 +5,8 @@
  */
 
 import * as nock from 'nock';
-import { FailureStrategySimple, SCProcessHandler, SuccessStrategySimple, Worker } from 'workit-core';
-import { ICamundaConfig } from 'workit-types';
+import { FailureStrategySimple, SCProcessHandler, SuccessStrategySimple, Worker } from '@mkostka/workit-core';
+import { ICamundaConfig }from '@mkostka/workit-types';
 import { ZeebeClient } from '../../src/zeebeClient';
 
 process.env.ZB_NODE_LOG_LEVEL = process.env.ZB_NODE_LOG_LEVEL || 'NONE';

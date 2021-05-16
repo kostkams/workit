@@ -5,7 +5,7 @@
  */
 
 import { CamundaBpmClient, CamundaExternalClient } from 'workit-bpm-client';
-import { IoC, Worker } from 'workit-core';
+import { IoC, Worker } from '@mkostka/workit-core';
 import { ZeebeClient } from 'workit-zeebe-client';
 import { Client } from '../camunda-n-mq/client';
 import { CamundaBpmWorker } from '../camundaBpm/camundaBpmWorker';

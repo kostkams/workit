@@ -4,8 +4,8 @@
  * See LICENSE file in the project root for full license information.
  */
 
-import { TaskBase } from 'workit-core';
-import { IMessage } from 'workit-types';
+import { TaskBase } from '@mkostka/workit-core';
+import { IMessage }from '@mkostka/workit-types';
 
 export class HelloWorldTaskV3 extends TaskBase<IMessage> {
   public execute(message: IMessage): Promise<IMessage> {

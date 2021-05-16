@@ -12,8 +12,8 @@
 /* eslint @typescript-eslint/no-unsafe-return: 0 */
 
 import { BasicAuthInterceptor } from 'camunda-external-task-client-js';
-import { IoC } from 'workit-core';
-import { ICamundaConfig, IReadOnlyVariables, IVariables } from 'workit-types';
+import { IoC } from '@mkostka/workit-core';
+import { ICamundaConfig, IReadOnlyVariables, IVariables }from '@mkostka/workit-types';
 import { SERVICE_IDENTIFIER } from '../config/constants/identifiers';
 import { Variables } from '../variables';
 

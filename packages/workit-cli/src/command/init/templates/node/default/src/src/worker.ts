@@ -1,5 +1,5 @@
-import { SERVICE_IDENTIFIER as CORE_IDENTIFIER, TAG } from 'workit-camunda';
-import { IoC, Worker } from 'workit-core';
+import { SERVICE_IDENTIFIER as CORE_IDENTIFIER, TAG } from '@mkostka/workit-camunda';
+import { IoC, Worker } from '@mkostka/workit-core';
 import './config/ioc';
 
 const worker = IoC.get<Worker>(CORE_IDENTIFIER.worker, TAG.camundaBpm);

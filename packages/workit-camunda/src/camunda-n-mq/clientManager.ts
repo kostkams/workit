@@ -20,7 +20,7 @@ import {
   IWorkflowDefinition,
   IWorkflowDefinitionRequest,
   IWorkflowOptions,
-} from 'workit-types';
+}from '@mkostka/workit-types';
 
 import debug = require('debug');
 

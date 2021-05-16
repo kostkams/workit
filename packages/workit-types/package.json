@@ -1,9 +1,9 @@
 {
-  "name": "workit-types",
+  "name": "@mkostka/workit-types",
   "version": "4.2.3-alpha.0",
   "description": "TypeScript types for Workit",
   "author": "Montreal City Authors",
-  "homepage": "https://github.com/VilledeMontreal/workit#readme",
+  "homepage": "https://github.com/kostkams/workit#readme",
   "license": "MIT",
   "main": "lib/src/index.js",
   "typings": "lib/src/index.d.ts",
@@ -66,10 +66,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VilledeMontreal/workit.git"
+    "url": "git+https://github.com/kostkams/workit.git"
   },
   "bugs": {
-    "url": "https://github.com/VilledeMontreal/workit/issues"
+    "url": "https://github.com/kostkams/workit/issues"
   },
   "publishConfig": {
     "access": "public"

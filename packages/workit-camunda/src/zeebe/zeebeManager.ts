@@ -5,7 +5,7 @@
  */
 
 import { inject, injectable, named } from 'inversify';
-import { IWorkflowClient } from 'workit-types';
+import { IWorkflowClient }from '@mkostka/workit-types';
 import { ClientManager } from '../camunda-n-mq/clientManager';
 import { SERVICE_IDENTIFIER } from '../config/constants/identifiers';
 import { TAG } from '../config/constants/tag';

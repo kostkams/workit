@@ -15,7 +15,7 @@
 /* eslint global-require: 0 */
 /* eslint no-restricted-syntax: 0 */
 
-import { IPlugin, IPlugins, HookState, ILogger, IIoC } from 'workit-types';
+import { IPlugin, IPlugins, HookState, ILogger, IIoC }from '@mkostka/workit-types';
 
 /**
  * Returns the Plugins object that meet the below conditions.

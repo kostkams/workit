@@ -3,7 +3,7 @@
  * Licensed under the MIT license.
  * See LICENSE file in the project root for full license information.
  */
-import { ILogger } from 'workit-types';
+import { ILogger }from '@mkostka/workit-types';
 
 /** No-op implementation of ILogger */
 export class NoopLogger implements ILogger {

@@ -7,8 +7,8 @@
 import { NOOP_TRACER } from '@opentelemetry/api';
 import { BasicAuthInterceptor, Client as CamundaExternalClient } from 'camunda-external-task-client-js';
 import * as nock from 'nock';
-import { FailureStrategySimple, IoC, SCProcessHandler, SuccessStrategySimple, Worker } from 'workit-core';
-import { ICamundaClient, ICamundaConfig, IMessage, IProcessHandlerConfig, IWorkflowProps } from 'workit-types';
+import { FailureStrategySimple, IoC, SCProcessHandler, SuccessStrategySimple, Worker } from '@mkostka/workit-core';
+import { ICamundaClient, ICamundaConfig, IMessage, IProcessHandlerConfig, IWorkflowProps }from '@mkostka/workit-types';
 import { CamundaBpmClient } from '../../src/camundaBpmClient';
 import { FakeTask } from '../utils/fake';
 import { run } from '../utils/func-test';

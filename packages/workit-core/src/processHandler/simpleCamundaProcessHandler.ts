@@ -18,7 +18,7 @@ import {
   ITask,
   ITracerPropagator,
   IWorkflowProps,
-} from 'workit-types';
+}from '@mkostka/workit-types';
 import { SERVICE_IDENTIFIER } from '../config/constants/identifiers';
 import { Interceptors } from '../interceptors';
 import { IoC, kernel } from '../config/container';

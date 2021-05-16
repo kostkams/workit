@@ -39,16 +39,16 @@ For example, instead of `workit-camunda` it will be `@villedemontreal/workit-cam
 
 | Package | Description |
 | --- | ---|
-| [workit-types](https://github.com/VilledeMontreal/workit/tree/master/packages/workit-types) | This package provides TypeScript interfaces and enums for the Workit core model. 
-| [workit-core](https://github.com/VilledeMontreal/workit/tree/master/packages/workit-core) | This package provides default and no-op implementations of the Workit types 
+| [workit-types](https://github.com/kostkams/workit/tree/master/packages/workit-types) | This package provides TypeScript interfaces and enums for the Workit core model. 
+| [workit-core](https://github.com/kostkams/workit/tree/master/packages/workit-core) | This package provides default and no-op implementations of the Workit types 
 
 ### Implementation / Clients
 
 | Package                                  | Description |
 | ---------------------------------------- | -----------------|
-| [workit-bpm-client](https://github.com/VilledeMontreal/workit/tree/master/packages/workit-bpm-client) | This module provides a full control over the Camunda Bpm platform.<br> It use [`camunda-external-task-client-js`](https://github.com/camunda/camunda-external-task-client-js) by default. |
-| [workit-zeebe-client](https://github.com/VilledeMontreal/workit/tree/master/packages/workit-zeebe-client) | This module provides a full control over the Zeebe platform.<br> It use [`zeebe-node`](https://github.com/creditsenseau/zeebe-client-node-js) and [`zeebe-elasticsearch-client`](https://github.com/VilledeMontreal/workit/tree/master/packages/zeebe-elasticsearch-client)  by default. |
-| [workit-camunda](https://github.com/VilledeMontreal/workit/tree/master/packages/workit-camunda) | This module allows you to switch between Camunda BPM and Zeebe easily.<br> It use [`workit-bpm-client`](https://github.com/VilledeMontreal/workit/tree/master/packages/workit-bpm-client) and [`workit-zeebe-client`](https://github.com/VilledeMontreal/workit/tree/master/packages/workit-zeebe-client) by default. |
+| [workit-bpm-client](https://github.com/kostkams/workit/tree/master/packages/workit-bpm-client) | This module provides a full control over the Camunda Bpm platform.<br> It use [`camunda-external-task-client-js`](https://github.com/camunda/camunda-external-task-client-js) by default. |
+| [workit-zeebe-client](https://github.com/kostkams/workit/tree/master/packages/workit-zeebe-client) | This module provides a full control over the Zeebe platform.<br> It use [`zeebe-node`](https://github.com/creditsenseau/zeebe-client-node-js) and [`zeebe-elasticsearch-client`](https://github.com/kostkams/workit/tree/master/packages/zeebe-elasticsearch-client)  by default. |
+| [workit-camunda](https://github.com/kostkams/workit/tree/master/packages/workit-camunda) | This module allows you to switch between Camunda BPM and Zeebe easily.<br> It use [`workit-bpm-client`](https://github.com/kostkams/workit/tree/master/packages/workit-bpm-client) and [`workit-zeebe-client`](https://github.com/kostkams/workit/tree/master/packages/workit-zeebe-client) by default. |
 
 ## Installing
 
@@ -437,7 +437,7 @@ docker run -d --name camunda -p 8080:8080 camunda/camunda-bpm-platform:latest
 
 ## Versionning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/VilledeMontreal/workit/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/kostkams/workit/tags).
 
 workit-* | Zeebe | Camunda BPM
 -- | -- | -- 

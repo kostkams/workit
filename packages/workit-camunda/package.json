@@ -1,9 +1,9 @@
 {
-  "name": "workit-camunda",
+  "name": "@mkostka/workit-camunda",
   "version": "4.2.3-alpha.0",
   "description": "Worker for Node.js system with pluggable Camunda clients that works with both Zeebe and Camunda platform powered by TypeScript",
   "author": "Montreal City Authors",
-  "homepage": "https://github.com/VilledeMontreal/workit#readme",
+  "homepage": "https://github.com/kostkams/workit#readme",
   "license": "MIT",
   "main": "lib/src/index.js",
   "typings": "lib/src/index.d.ts",
@@ -11,10 +11,10 @@
     "debug": "~4.1.1",
     "inversify": "~5.0.1",
     "reflect-metadata": "~0.1.13",
-    "workit-bpm-client": "^4.2.3-alpha.0",
-    "workit-core": "^4.2.3-alpha.0",
-    "workit-types": "^4.2.3-alpha.0",
-    "workit-zeebe-client": "^4.2.3-alpha.0"
+    "@mkostka/workit-bpm-client": "^4.2.3-alpha.0",
+    "@mkostka/workit-core": "^4.2.3-alpha.0",
+    "@mkostka/workit-types": "^4.2.3-alpha.0",
+    "@mkostka/workit-zeebe-client": "^4.2.3-alpha.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -88,10 +88,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VilledeMontreal/workit.git"
+    "url": "git+https://github.com/kostkams/workit.git"
   },
   "bugs": {
-    "url": "https://github.com/VilledeMontreal/workit/issues"
+    "url": "https://github.com/kostkams/workit/issues"
   },
   "publishConfig": {
     "access": "public"

@@ -4,8 +4,8 @@
  * See LICENSE file in the project root for full license information.
  */
 
-import { TaskBase } from 'workit-core';
-import { ICamundaService, IMessage } from 'workit-types';
+import { TaskBase } from '@mkostka/workit-core';
+import { ICamundaService, IMessage }from '@mkostka/workit-types';
 
 export class FakeTask extends TaskBase<IMessage> {
   constructor() {

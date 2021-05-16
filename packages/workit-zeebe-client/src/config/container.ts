@@ -4,8 +4,8 @@
  * See LICENSE file in the project root for full license information.
  */
 
-import { kernel } from 'workit-core';
-import { ICamundaConfig } from 'workit-types';
+import { kernel } from '@mkostka/workit-core';
+import { ICamundaConfig }from '@mkostka/workit-types';
 import { SERVICE_IDENTIFIER } from './constants/identifiers';
 
 const configBase: ICamundaConfig = {
@@ -15,7 +15,7 @@ const configBase: ICamundaConfig = {
 };
 
 const zeebeElasticExporterConfig = {
-  url: `http://localhost:9200`,
+  url: `http://${process.env.ZEEBE_ELASTICSEARCH_URL || 'localhost:9200'}`,
 };
 
 const camundaCloudConfig = {} as Partial<{ oAuth: Record<string, unknown> }>;

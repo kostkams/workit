@@ -31,11 +31,11 @@ workit create task --file /your/path.bpmn
 workit create task
 ```
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/VilledeMontreal/workit/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/kostkams/workit/tags).
 
 ## Useful links
--   [Get started in 2 minutes](https://github.com/VilledeMontreal/workit/blob/master/packages/workit-camunda/.docs/WORKER.md).
--   [Documentation is available in this folder](https://github.com/VilledeMontreal/workit/tree/master/packages/workit-camunda/.docs)
+-   [Get started in 2 minutes](https://github.com/kostkams/workit/blob/master/packages/workit-camunda/.docs/WORKER.md).
+-   [Documentation is available in this folder](https://github.com/kostkams/workit/tree/master/packages/workit-camunda/.docs)
 -   Comprehensive API documentation is available [online](https://villedemontreal.github.io/workit/) and in the `docs` subdirectory
 
 ## Maintainers

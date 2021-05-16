@@ -1,10 +1,11 @@
+// @ts-nocheck
 /*
  * Copyright (c) 2020 Ville de Montreal. All rights reserved.
  * Licensed under the MIT license.
  * See LICENSE file in the project root for full license information.
  */
 import { optional } from 'inversify';
-import { IoC, PluginLoader, SERVICE_IDENTIFIER, NOOP_LOGGER } from 'workit-core';
+import { IoC, PluginLoader, SERVICE_IDENTIFIER, NOOP_LOGGER } from '@mkostka/workit-core';
 import {
   ICamundaService,
   IClient,
@@ -15,7 +16,6 @@ import {
   IMessage,
   IPagination,
   IPaginationOptions,
-  IPayload,
   IPublishMessage,
   IUpdateWorkflowRetry,
   IUpdateWorkflowVariables,
@@ -28,11 +28,10 @@ import {
   IWorkflowProcessIdDefinition,
   IWorkflowProps,
   IZeebeOptions,
-} from 'workit-types';
+}from '@mkostka/workit-types';
 import { Configs, IAPIConfig as IElasticExporterConfig, ZBElasticClient } from 'zeebe-elasticsearch-client';
 import { ZBClient, ZBWorker } from 'zeebe-node';
 // FIXME: dist folder
-import { CompleteFn } from 'zeebe-node/dist/lib/interfaces';
 import { PaginationUtils } from './utils/paginationUtils';
 import { ZeebeMessage } from './zeebeMessage';
 
@@ -89,7 +88,7 @@ export class ZeebeClient<TVariables = unknown, TProps = unknown, RVariables = TV
     this._worker = this._client.createWorker(
       this._config.workerId || 'some-random-id',
       this._config.topicName,
-      async (payload: IPayload<TVariables, TProps>, complete: CompleteFn<TVariables>) => {
+      async (payload, complete) => {
         const [message, service] = ZeebeMessage.wrap<TVariables, TProps>(payload, complete);
         await onMessageReceived(message, service);
       },
@@ -99,7 +98,7 @@ export class ZeebeClient<TVariables = unknown, TProps = unknown, RVariables = TV
   }
 
   public async deployWorkflow(bpmnPath: string): Promise<IDeployWorkflowResponse> {
-    const result = await this._client.deployWorkflow(bpmnPath);
+    const result = await this._client.deployProcess(bpmnPath);
     return {
       workflows: result.workflows,
       key: result.key.toString(), // TODO: interface say number but it return string, need to PR to zeebe-node
@@ -108,7 +107,7 @@ export class ZeebeClient<TVariables = unknown, TProps = unknown, RVariables = TV
 
   public async getWorkflows(options?: Partial<IWorkflowOptions & IPaginationOptions>): Promise<IPagination<IWorkflow>> {
     this._validateExporterConfig();
-    const params = { _source_excludes: 'bpmnXml' };
+    const params = { _source_excludes: 'resource' };
     const workflowOptions = { params };
     workflowOptions.params = PaginationUtils.setElasticPaginationParams(params, options);
     const criteria = this._setWorkflowCriteria(options);
@@ -117,10 +116,10 @@ export class ZeebeClient<TVariables = unknown, TProps = unknown, RVariables = TV
     const data = elasticResult.hits.map((doc) => {
       const workflow = doc._source;
       return {
-        bpmnProcessId: workflow.bpmnProcessId,
-        version: workflow.version,
+        bpmnProcessId: workflow.value.bpmnProcessId,
+        version: workflow.value.version,
         workflowKey: workflow.key.toString(),
-        resourceName: workflow.resourceName,
+        resourceName: workflow.value.resourceName,
       };
     });
 
@@ -152,7 +151,7 @@ export class ZeebeClient<TVariables = unknown, TProps = unknown, RVariables = TV
     return {
       version: doc.version,
       resourceName: doc.resourceName,
-      bpmnXml: doc.bpmnXml,
+      bpmnXml: doc.resource,
       workflowKey: doc.key.toString(),
       bpmnProcessId: doc.bpmnProcessId,
     };
@@ -188,14 +187,14 @@ export class ZeebeClient<TVariables = unknown, TProps = unknown, RVariables = TV
     model: ICreateWorkflowInstance<T>
   ): Promise<ICreateWorkflowInstanceResponse> {
     if (!model.version) {
-      return this._client.createWorkflowInstance<T>(model.bpmnProcessId, model.variables);
+      return this._client.createProcessInstance<T>(model.bpmnProcessId, model.variables);
     }
     return this._client.createWorkflowInstance<T>(model as Required<ICreateWorkflowInstance<T>>);
   }
 
   public cancelWorkflowInstance(instance: string): Promise<void> {
     this._validateNumber(instance);
-    return this._client.cancelWorkflowInstance(instance as any); // TODO: will be fixed https://github.com/zeebe-io/zeebe/issues/2680
+    return this._client.cancelProcessInstance(instance as any); // TODO: will be fixed https://github.com/zeebe-io/zeebe/issues/2680
   }
 
   public resolveIncident(incidentKey: string): Promise<void> {

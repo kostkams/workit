@@ -5,8 +5,8 @@
  */
 
 import axios from 'axios';
-import { TaskBase } from 'workit-core';
-import { IMessage } from 'workit-types';
+import { TaskBase } from '@mkostka/workit-core';
+import { IMessage }from '@mkostka/workit-types';
 
 export class HelloWorldTaskV2 extends TaskBase<IMessage> {
   public async execute(message: IMessage): Promise<IMessage> {

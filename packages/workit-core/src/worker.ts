@@ -7,7 +7,7 @@
 import { EventEmitter } from 'events';
 import { injectable, unmanaged } from 'inversify';
 import 'reflect-metadata';
-import { IClient, IProcess, IProcessHandler } from 'workit-types';
+import { IClient, IProcess, IProcessHandler }from '@mkostka/workit-types';
 
 import debug = require('debug');
 

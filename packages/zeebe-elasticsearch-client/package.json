@@ -1,5 +1,5 @@
 {
-  "name": "zeebe-elasticsearch-client",
+  "name": "@mkostka/zeebe-elasticsearch-client",
   "version": "4.2.3-alpha.0",
   "description": "Client (Browser and NodeJs) for Zeebe Elasticsearch exporter powered by Typescript",
   "keywords": [
@@ -7,7 +7,7 @@
     "elasticsearch"
   ],
   "author": "Montreal City Authors",
-  "homepage": "https://github.com/VilledeMontreal/workit#readme",
+  "homepage": "https://github.com/kostkams/workit#readme",
   "license": "MIT",
   "main": "lib/src/index.js",
   "typings": "lib/src/index.d.ts",
@@ -21,7 +21,7 @@
     "README.md"
   ],
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -53,7 +53,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VilledeMontreal/workit.git"
+    "url": "git+https://github.com/kostkams/workit.git"
   },
   "scripts": {
     "test": "jest .",
@@ -68,7 +68,7 @@
     "codecov": "codecov -f coverage/*.json -p ../../"
   },
   "bugs": {
-    "url": "https://github.com/VilledeMontreal/workit/issues"
+    "url": "https://github.com/kostkams/workit/issues"
   },
   "gitHead": "4d109b9f2978bac5ec5338a39adc49ccf9bf2651"
 }

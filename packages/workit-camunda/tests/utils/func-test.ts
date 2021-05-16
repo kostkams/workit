@@ -5,7 +5,7 @@
  */
 
 import { assert } from 'chai';
-import { Worker } from 'workit-core';
+import { Worker } from '@mkostka/workit-core';
 
 export const run = (worker: Worker, scoped: any, done: any, delay: number = 500) => {
   worker.start();

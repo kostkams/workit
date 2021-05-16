@@ -17,9 +17,9 @@ export class Configs {
 
   constructor(customConfig?: Partial<IAPIConfig>) {
     this._elastic = {
-      url: `http://localhost:9200`,
+      url: `http://${process.env.ZEEBE_ELASTICSEARCH_URL || 'localhost:9200'}`,
       endpoints: {
-        workflows: '/operate-workflow_alias',
+        workflows: `/${process.env.ZEEBE_ELASTICSEARCH_ENDPOINTS_WORKFLOWS || 'operate-workflow_alias'}`,
       },
       retry: 3,
       timeout: 30000,

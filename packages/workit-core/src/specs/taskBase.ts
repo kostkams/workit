@@ -6,7 +6,7 @@
 
 import { injectable } from 'inversify';
 import 'reflect-metadata';
-import { IMessage, ITask } from 'workit-types';
+import { IMessage, ITask }from '@mkostka/workit-types';
 
 @injectable()
 export abstract class TaskBase<I> implements ITask<I> {

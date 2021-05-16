@@ -27,7 +27,7 @@ import {
   IProcessDefinition,
   IProcessXmlDefinition,
   IResolveIncident,
-} from 'workit-types';
+}from '@mkostka/workit-types';
 import { SERVICE_IDENTIFIER } from '../config/constants/identifiers';
 import { Utils } from '../utils/utils';
 

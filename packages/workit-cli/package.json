@@ -1,9 +1,9 @@
 {
-  "name": "workit-cli",
+  "name": "@mkostka/workit-cli",
   "version": "4.2.3-alpha.0",
   "description": "cli for workit project. Handy tools.",
   "author": "Olivier Albertini <olivier.albertini@ville.montreal.qc.ca>",
-  "homepage": "https://github.com/VilledeMontreal/workit#readme",
+  "homepage": "https://github.com/kostkams/workit#readme",
   "license": "MIT",
   "main": "lib/index.js",
   "bin": {
@@ -72,10 +72,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VilledeMontreal/workit.git"
+    "url": "git+https://github.com/kostkams/workit.git"
   },
   "bugs": {
-    "url": "https://github.com/VilledeMontreal/workit/issues"
+    "url": "https://github.com/kostkams/workit/issues"
   },
   "gitHead": "4d109b9f2978bac5ec5338a39adc49ccf9bf2651"
 }

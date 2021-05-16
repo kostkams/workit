@@ -5,7 +5,7 @@
  */
 
 import axios, { AxiosError } from 'axios';
-import { ICamundaService, IFailureStrategy, IMessage, IWorkflowProps } from 'workit-types';
+import { ICamundaService, IFailureStrategy, IMessage, IWorkflowProps }from '@mkostka/workit-types';
 
 export interface IHandlerStrategy extends IFailureStrategy<ICamundaService> {
   isHandled(error: any, message: IMessage<unknown, IWorkflowProps>): boolean;

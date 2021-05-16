@@ -6,7 +6,7 @@
 
 import { injectable, optional, inject } from 'inversify';
 import 'reflect-metadata';
-import { ICamundaService, IFailureStrategy, IMessage, IWorkflowProps, ILogger } from 'workit-types';
+import { ICamundaService, IFailureStrategy, IMessage, IWorkflowProps, ILogger }from '@mkostka/workit-types';
 import { SERVICE_IDENTIFIER } from '../config/constants/identifiers';
 import { NOOP_LOGGER } from '../common/noopLogger';
 

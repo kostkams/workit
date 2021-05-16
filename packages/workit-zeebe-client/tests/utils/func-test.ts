@@ -5,7 +5,7 @@
  */
 
 import * as assert from 'assert';
-import { Worker } from 'workit-core';
+import { Worker } from '@mkostka/workit-core';
 
 export const run = (worker: Worker, scoped: { isDone: () => boolean }, done: () => void, delay = 500): void => {
   worker.start();

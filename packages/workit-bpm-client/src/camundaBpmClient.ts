@@ -30,8 +30,8 @@ import {
   IWorkflowDefinitionRequest,
   IWorkflowOptions,
   IWorkflowProcessIdDefinition,
-} from 'workit-types';
-import { IoC, PluginLoader, SERVICE_IDENTIFIER, NOOP_LOGGER } from 'workit-core';
+}from '@mkostka/workit-types';
+import { IoC, PluginLoader, SERVICE_IDENTIFIER, NOOP_LOGGER } from '@mkostka/workit-core';
 import { PaginationUtils } from './utils/paginationUtils';
 
 import { CamundaMessage } from './camundaMessage';

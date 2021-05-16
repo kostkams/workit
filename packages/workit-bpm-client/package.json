@@ -1,22 +1,22 @@
 {
-  "name": "workit-bpm-client",
+  "name": "@mkostka/workit-bpm-client",
   "version": "4.2.3-alpha.0",
   "description": "Camunda BPM client for WorkIt that works with Camunda platform powered by TypeScript",
   "author": "Montreal City Authors",
-  "homepage": "https://github.com/VilledeMontreal/workit#readme",
+  "homepage": "https://github.com/kostkams/workit#readme",
   "license": "MIT",
   "main": "lib/src/index.js",
   "typings": "lib/src/index.d.ts",
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "camunda-external-task-client-js": "^1.3.0",
     "debug": "^4.2.0",
     "fast-safe-stringify": "~2.0.7",
     "form-data": "~2.5.1",
     "inversify": "~5.0.1",
     "reflect-metadata": "~0.1.13",
-    "workit-core": "^4.2.3-alpha.0",
-    "workit-types": "^4.2.3-alpha.0"
+    "@mkostka/workit-core": "^4.2.3-alpha.0",
+    "@mkostka/workit-types": "^4.2.3-alpha.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -89,10 +89,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VilledeMontreal/workit.git"
+    "url": "git+https://github.com/kostkams/workit.git"
   },
   "bugs": {
-    "url": "https://github.com/VilledeMontreal/workit/issues"
+    "url": "https://github.com/kostkams/workit/issues"
   },
   "publishConfig": {
     "access": "public"

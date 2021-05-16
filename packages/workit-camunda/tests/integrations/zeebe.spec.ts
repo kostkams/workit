@@ -7,8 +7,8 @@
 import { NOOP_TRACER } from '@opentelemetry/api';
 import * as crypto from 'crypto';
 import * as path from 'path';
-import { FailureStrategySimple, IoC, SCProcessHandler, TaskBase, Worker } from 'workit-core';
-import { ICamundaService, IMessage, ISuccessStrategy } from 'workit-types';
+import { FailureStrategySimple, IoC, SCProcessHandler, TaskBase, Worker } from '@mkostka/workit-core';
+import { ICamundaService, IMessage, ISuccessStrategy }from '@mkostka/workit-types';
 import { ZeebeClient } from 'workit-zeebe-client';
 import { Client } from '../../src/camunda-n-mq/client';
 

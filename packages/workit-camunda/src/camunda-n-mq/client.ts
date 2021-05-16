@@ -6,7 +6,7 @@
 
 import { inject, injectable } from 'inversify';
 import 'reflect-metadata';
-import { IClient, IMessage } from 'workit-types';
+import { IClient, IMessage }from '@mkostka/workit-types';
 import { SERVICE_IDENTIFIER } from '../config/constants/identifiers';
 
 @injectable()

@@ -5,7 +5,7 @@
  */
 
 import { camundaLogger, logger } from 'workit-bpm-client';
-import { kernel } from 'workit-core';
+import { kernel } from '@mkostka/workit-core';
 import { constants } from './constants';
 import { SERVICE_IDENTIFIER } from './constants/identifiers';
 

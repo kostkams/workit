@@ -6,7 +6,7 @@
 
 import { injectable } from 'inversify';
 import 'reflect-metadata';
-import { ICamundaService, IMessage, ISuccessStrategy } from 'workit-types';
+import { ICamundaService, IMessage, ISuccessStrategy }from '@mkostka/workit-types';
 
 @injectable()
 export class SuccessStrategySimple implements ISuccessStrategy<ICamundaService> {

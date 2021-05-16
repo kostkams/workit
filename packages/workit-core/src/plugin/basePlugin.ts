@@ -4,7 +4,7 @@
  * See LICENSE file in the project root for full license information.
  */
 
-import { IPluginConfig, IPlugin, ILogger, IIoC } from 'workit-types';
+import { IPluginConfig, IPlugin, ILogger, IIoC }from '@mkostka/workit-types';
 
 // TODO: add bpmn files and failures/success strategies as well
 
