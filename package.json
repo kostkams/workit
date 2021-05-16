@@ -15,7 +15,7 @@
     "test:integration": "lerna run test:integration --scope=workit-camunda",
     "clean": "lerna clean -y",
     "publish:ci": "lerna run lint-fix && lerna publish --canary --yes",
-    "publish": "lerna publish --no-private --canary --yes",
+    "publish": "lerna publish --no-private --yes",
     "bootstrap": "lerna bootstrap",
     "bump": "lerna publish",
     "remark-lint": "remark .",

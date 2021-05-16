@@ -132,6 +132,7 @@ export class ZeebeClient<TVariables = unknown, TProps = unknown, RVariables = TV
   public async getWorkflow(payload: IWorkflowDefinitionRequest): Promise<IWorkflowDefinition> {
     this._validateExporterConfig();
     this._validateObject();
+
     const key = Number((payload as IWorkflowDefinitionKey).workflowKey);
     const response = await this._exporterClient.getWorkflows({
       key: !Number.isNaN(key) ? key : undefined,
