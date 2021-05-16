@@ -1,6 +1,6 @@
 {
   "lerna": "3.20.2",
-  "version": "4.2.3-alpha.6",
+  "version": "4.2.3-alpha.7",
   "packages": [
     "examples/*",
     "packages/*"
