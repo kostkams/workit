@@ -6,7 +6,7 @@
 
 import { NOOP_TRACER } from '@opentelemetry/api';
 import * as nock from 'nock';
-import { CamundaBpmClient, CamundaExternalClient, Utils } from 'workit-bpm-client';
+import { CamundaBpmClient, CamundaExternalClient, Utils } from '@mkostka/workit-bpm-client';
 import { FailureStrategySimple, IoC, SCProcessHandler, SuccessStrategySimple, Worker } from '@mkostka/workit-core';
 import { ICamundaClient, ICamundaConfig, IMessage, IProcessHandlerConfig, IWorkflowProps }from '@mkostka/workit-types';
 import { Client } from '../../src/camunda-n-mq/client';

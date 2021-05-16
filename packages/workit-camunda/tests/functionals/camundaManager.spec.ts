@@ -5,7 +5,7 @@
  */
 
 import nock = require('nock');
-import { CamundaBpmClient, CamundaExternalClient } from 'workit-bpm-client';
+import { CamundaBpmClient, CamundaExternalClient } from '@mkostka/workit-bpm-client';
 import { ICamundaClient }from '@mkostka/workit-types';
 import { CamundaManager } from '../../src/camundaBpm/camundaManager';
 import '../../src/config/ioc';

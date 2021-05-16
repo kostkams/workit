@@ -4,9 +4,9 @@
  * See LICENSE file in the project root for full license information.
  */
 
-import { CamundaBpmClient, CamundaExternalClient } from 'workit-bpm-client';
+import { CamundaBpmClient, CamundaExternalClient } from '@mkostka/workit-bpm-client';
 import { IoC, Worker } from '@mkostka/workit-core';
-import { ZeebeClient } from 'workit-zeebe-client';
+import { ZeebeClient } from '@mkostka/workit-zeebe-client';
 import { Client } from '../camunda-n-mq/client';
 import { CamundaBpmWorker } from '../camundaBpm/camundaBpmWorker';
 import { CamundaManager } from '../camundaBpm/camundaManager';
