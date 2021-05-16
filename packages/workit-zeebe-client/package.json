@@ -1,6 +1,6 @@
 {
   "name": "@mkostka/workit-zeebe-client",
-  "version": "4.2.3-alpha.2",
+  "version": "4.2.3-alpha.3",
   "description": "Zeebe client for WorkIt that works with Zeebe platform powered by TypeScript",
   "author": "Montreal City Authors",
   "homepage": "https://github.com/kostkams/workit#readme",
