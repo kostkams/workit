@@ -29,7 +29,7 @@ import {
   IWorkflowProps,
   IZeebeOptions,
 }from '@mkostka/workit-types';
-import { Configs, IAPIConfig as IElasticExporterConfig, ZBElasticClient } from 'zeebe-elasticsearch-client';
+import { Configs, IAPIConfig as IElasticExporterConfig, ZBElasticClient } from '@mkostka/zeebe-elasticsearch-client';
 import { ZBClient, ZBWorker } from 'zeebe-node';
 // FIXME: dist folder
 import { PaginationUtils } from './utils/paginationUtils';
