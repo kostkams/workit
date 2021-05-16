@@ -149,11 +149,11 @@ export class ZeebeClient<TVariables = unknown, TProps = unknown, RVariables = TV
     const doc = data._source;
 
     return {
-      version: doc.version,
-      resourceName: doc.resourceName,
-      bpmnXml: doc.resource,
+      version: doc.value.version,
+      resourceName: doc.value.resourceName,
+      bpmnXml: doc.value.resource,
       workflowKey: doc.key.toString(),
-      bpmnProcessId: doc.bpmnProcessId,
+      bpmnProcessId: doc.value.bpmnProcessId,
     };
   }
 
