@@ -1,6 +1,6 @@
 {
   "name": "@mkostka/workit-core",
-  "version": "4.2.3-alpha.0",
+  "version": "4.2.3-alpha.1",
   "description": "This package provides default and no-op implementations of the WorkIt types for client packages.",
   "author": "Montreal City Authors",
   "homepage": "https://github.com/kostkams/workit#readme",
@@ -8,14 +8,14 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "dependencies": {
+    "@mkostka/workit-types": "^4.2.3-alpha.1",
     "@opentelemetry/api": "0.4.0",
     "@opentelemetry/core": "0.4.0",
     "debug": "~4.1.1",
     "fast-safe-stringify": "~2.0.7",
     "inversify": "~5.0.1",
     "reflect-metadata": "~0.1.13",
-    "uuid": "^8.3.1",
-    "@mkostka/workit-types": "^4.2.3-alpha.0"
+    "uuid": "^8.3.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",

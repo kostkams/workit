@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.3-alpha.1](https://github.com/kostkams/workit/compare/v4.2.3-alpha.0...v4.2.3-alpha.1) (2021-05-16)
+
+**Note:** Version bump only for package @mkostka/workit-example-opentelemetry
+
+
+
+
+
 ## [4.2.3-alpha.0](https://github.com/kostkams/workit/compare/v4.2.2...v4.2.3-alpha.0) (2020-11-27)
 
 **Note:** Version bump only for package workit-example-opentelemetry
