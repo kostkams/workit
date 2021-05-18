@@ -124,7 +124,7 @@ export class ZBElasticClient {
     } else if (model.bpmnProcessId) {
       const mustMatchBpmnProcessId = {
         match: {
-          bpmnProcessId: {
+          "value.bpmnProcessId": {
             query: model.bpmnProcessId,
           },
         },
@@ -139,7 +139,7 @@ export class ZBElasticClient {
           top_hits: {
             sort: [
               {
-                version: {
+                'value.version': {
                   order: 'desc',
                 },
               },
@@ -151,7 +151,7 @@ export class ZBElasticClient {
     } else if (hasVersionParam) {
       const mustMatchVersion = {
         match: {
-          version: {
+          'value.version': {
             query: model.version,
           },
         },
