@@ -1,6 +1,6 @@
 {
   "name": "@mkostka/workit-zeebe-client",
-  "version": "4.2.3-alpha.7",
+  "version": "4.2.3-alpha.8",
   "description": "Zeebe client for WorkIt that works with Zeebe platform powered by TypeScript",
   "author": "Montreal City Authors",
   "homepage": "https://github.com/kostkams/workit#readme",
@@ -10,7 +10,7 @@
   "dependencies": {
     "@mkostka/workit-core": "^4.2.3-alpha.6",
     "@mkostka/workit-types": "^4.2.3-alpha.6",
-    "@mkostka/zeebe-elasticsearch-client": "^4.2.3-alpha.6",
+    "@mkostka/zeebe-elasticsearch-client": "^4.2.3-alpha.8",
     "debug": "^4.2.0",
     "inversify": "~5.0.1",
     "reflect-metadata": "~0.1.13",

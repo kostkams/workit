@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.3-alpha.8](https://github.com/kostkams/workit/compare/v4.2.3-alpha.7...v4.2.3-alpha.8) (2021-05-18)
+
+**Note:** Version bump only for package @mkostka/workit-zeebe-client
+
+
+
+
+
 ## [4.2.3-alpha.7](https://github.com/kostkams/workit/compare/v4.2.3-alpha.6...v4.2.3-alpha.7) (2021-05-16)
 
 **Note:** Version bump only for package @mkostka/workit-zeebe-client
